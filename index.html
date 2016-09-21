@@ -1,10 +1,11 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <title>Angular 2 QuickStart</title>
+    <title>Republican Appointees for Trump</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
     <!-- Polyfill(s) for older browsers -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
@@ -12,10 +13,21 @@
     <script src="node_modules/zone.js/dist/zone.js"></script>
     <script src="node_modules/reflect-metadata/Reflect.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/intl/dist/Intl.min.js"></script>
+    <script src="node_modules/intl/locale-data/jsonp/en.js"></script> 
+    <script src="https://use.fontawesome.com/a0e6d628bf.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
 
     <script src="systemjs.config.js"></script>
     <script>
       System.import('app').catch(function(err){ console.error(err); });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $.backstretch(["img/tgt.jpg","img/rumsfeld-giuliani.jpg","img/snow.jpg","img/trump.jpg","img/meese.jpg"], {fade: 750, duration: 4000});
+      });
     </script>
   </head>
 
